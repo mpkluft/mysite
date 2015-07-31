@@ -2,12 +2,77 @@
 * Third Party
 */
 @import "../../bower_components/normalize.css/normalize.css";
-@import "media.css";
+@import "partials/media.css";
 @import "../../bower_components/bootstrap-grid-css/grid.css";
-
-@import "fonts.css";
+@import "partials/fonts.css";
 
 /*
 * Custom
 */
-@import "partials/app";
+@import "partials/app.scss";
+
+body {
+  color: #fff;
+}
+.container {
+  border: 1px solid #FFFFFF;
+}
+
+header.top {
+  width: 100%;
+  min-height: 649px;
+  background: url(../img/header.jpg) center;
+  .top_line {
+    width: inherit;
+    min-height: 97px;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0 0 2px rgba(255,255,255,.7);
+  }
+}
+
+.navigation{
+  width: 100%;
+  background: #313030;
+  nav.main {
+    width: inherit;
+    min-height: 100px;
+  }
+}
+
+.company_services {
+  width: 100%;
+  min-height: 400px;
+  background: #040303;
+  .name_company {
+    min-height: 150px;
+  }
+  .menu_services {
+    min-height: 300px;
+  }
+  .button_order {
+    min-height: 100px;
+  }
+}
+
+.tag_line {
+  width: 100%;
+  min-height: 100px;
+  background: #939393;
+}
+
+.news{
+  width: 100%;
+  min-height: 400px;
+  background: #4B4B4B;
+}
+
+.order {
+  width: 100%;
+  min-height: 200px;
+  background: #C9C9C9;
+}
+footer.main {
+  width: 100%;
+  min-height: 100px;
+  background:#020101;
+}
