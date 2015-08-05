@@ -3,7 +3,8 @@
 */
 @import "../../bower_components/normalize.css/normalize.css";
 @import "partials/media.css";
-@import "../../bower_components/bootstrap-grid-css/grid.css";
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+
 
 /*
 * Custom
@@ -164,6 +165,7 @@ nav.main{
       background: #000;
     }
     li {
+      width: auto;
       float: left;
       margin: 0;
       text-align: center;
@@ -183,19 +185,35 @@ nav.main{
     }
   }
 }
+nav.main li:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
 .company_services {
+  width: 100%;
   font-family: "BebasRegular";
   font-size: 19px;
+  background-color: #191919;
   .name_company {
     width: 100%;
     text-align: center;
     padding-top: 64px;
-    span.bg {
+    .col-sx-12:before {
+      content: " ";
       width: 52px;
-      height: 29px;
+      height: 27px;
       display: inline-block;
       background: url(../img/sprite.png) no-repeat -20px -457px;
-      margin: 0 25px;
+      margin: 0 25px 0 25px;
+    }
+    .col-sx-12:after {
+      content: " ";
+      width: 52px;
+      height: 27px;
+      display: inline-block;
+      background: url(../img/sprite.png) no-repeat -74px -457px;
+      margin: 0 25px 0 18px;
     }
     h1 {
       letter-spacing: 2px;
@@ -208,20 +226,73 @@ nav.main{
       }
     }
   }
+  .menu_services {
+    width: 100%;
+    margin-top: 70px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        float: left;
+        width: 160px;
+        height: 165px;
+        margin: 0 15px;
+        text-align: center;
+        border: 1px solid #353535;
+        position: relative;
+        span {
+          display: block;
+          position: absolute;
+          top: 16px;
+          left: 22px;
+          width: 112px;
+          height: 84px;
+        }
+        a {
+          h2 {
+            font-size: 20px;
+            color: #fff;
+            padding: 108px 0 10px 0;
+            margin: 0;
+            display: inline-block;
+            vertical-align: bottom;
+
+          }
+        }
+        .arrow {
+          width: 100%;
+          height: 25px;
+          background-color: #212121;
+        }
+      }
+    }
+  }
 }
 
+ .menu_services ul:nth-child(1) span {
+  background: url(../img/sprite.png) -136px 3px no-repeat;
+}
+ .menu_services ul:nth-child(2) span {
+  background: url(../img/sprite.png) -156px 3px no-repeat;
+}
+ .menu_services ul:nth-child(3) span {
+  background: url(../img/sprite.png) -176px 3px no-repeat;
+}
+ .menu_services ul:nth-child(4) span {
+  background: url(../img/sprite.png) -186px 3px no-repeat;
+}
+ .menu_services ul:nth-child(5) span {
+  background: url(../img/sprite.png) -196px 3px no-repeat;
+}
+ .menu_services ul:nth-child(6) span {
+  background: url(../img/sprite.png) -236px 3px no-repeat;
+}
 
-.company_services {
-  width: 100%;
-  min-height: 400px;
-  background: #040303;
-  .menu_services {
-    min-height: 300px;
-  }
   .button_order {
     min-height: 100px;
   }
-}
+
 
 .tag_line {
   width: 100%;
@@ -247,19 +318,4 @@ footer.main {
   background:#020101;
 }
 
-#row {
-  margin:0 auto;
-  :before,
-  :after {
-    display: table;
-    content: " ";
-    box-sizing: border-box;
-  }
-  :after {
-    clear: both;
-  }
-}
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    padding: 0;
-}
