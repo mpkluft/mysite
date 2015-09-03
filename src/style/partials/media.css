@@ -2,17 +2,184 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+    header.top div.top_line div.phone {
+  }
+  header.top div.top_line {
+  }
+  header.top div.banner div.banner_slogan {
+  }
+  body header.top {
+  }
 
+  body nav.main ul{
+  }
+
+  body nav.main ul li{
+  }
+
+  body nav.main div.container {
+  }
+
+  body div.company_services{
+  }
+
+  body div.company_services div.wrap {
+    margin: 66px 0 46px;
+  }
+
+  div.company_services ul.items_wrap li.item {
+    width: 152px;
+    margin-right: 4px;
+  }
+  li.item ul.sub_menu {
+    width: 96%;
+  }
+  li.item ul.sub_menu h3 {
+  }
+  body div.slogan {
+  }
+  body div.slogan span.slogan{
+  }
+  
+  body div.slogan span.slogan::before{
+  }
+   body div.slogan span.slogan::after{
+  }
+  body div.slogan span.text{
+  }
+  body div.news div.img_news {
+    height: 200px;
+  }
+  body li.item a h1 {
+    font-size: 18px;
+  }
+
+  body div.news div.text_news {
+  }
+  div.order span.order_services {
+  }
+  body div.order {
+  }
+  body div.order a.button {
+  }
+
+  footer.main_footer span.stat {
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+   body nav.main ul li{
+    padding: 0 12px;
+  }
+  body div.company_services{
+    padding: 18px 0 18px;
+  }
+  body div.company_services div.wrap {
+    margin: 15px 0 23px;
+  }
+  div.company_services ul.items_wrap li.item {
+    margin: 5%;
+  }
+  li.item ul.sub_menu {
+    width: 94%;
+    padding: 10px 0;
+    top: 228px;
+  }
+  div.order span.order_services {
+    font-size: 31px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  header.top div.top_line div.logo{
+    top: -92px;
+    left: 288px;
+  }
+  header.top div.top_line div.phone {
+    float: left;
+  }
+  header.top div.top_line {
+    min-height: 138px;
+  }
+  header.top div.banner div.banner_slogan {
+    padding-top: 3px;
+    margin: -3px auto 11px;
+    font-size: 28px;
+  }
+  body header.top {
+    height: 254px;
+    background: none;
+    background-color: #6C6767;
+  }
 
+  body nav.main ul{
+    line-height: 42px;
+  }
+
+  body nav.main ul li{
+    float: none;
+    border:none;
+  }
+
+  body nav.main div.container {
+    padding: 0;
+  }
+
+  body div.company_services{
+    padding: 12px 0 12px;
+  }
+
+  body div.company_services div.wrap {
+    margin: 0px 0 22px;
+  }
+
+  div.company_services ul.items_wrap li.item {
+    margin: 28px;
+  }
+  li.item ul.sub_menu {
+    width: 94%;
+    padding: 10px 0;
+    top: 228px;
+  }
+  li.item ul.sub_menu h3 {
+    font-size: 15px;
+  }
+  body div.slogan {
+    padding: 8px 0;
+  }
+  body div.slogan span.slogan{
+    font-size: 23px;
+  }
+  
+  body div.slogan span.slogan::before{
+    display: none;
+  }
+   body div.slogan span.slogan::after{
+    display: none;
+  }
+  body div.slogan span.text{
+    width: 100%;
+  }
+
+  body div.news div.text_news {
+    padding: 12px 0;
+  }
+  div.order span.order_services {
+    font-size: 24px;
+  }
+  body div.order {
+    padding: 9px 0 0;
+    text-align: center;
+  }
+  body div.order a.button {
+    float: none;
+  }
+
+  footer.main_footer span.stat {
+    margin: -30px 0 0 355px;
+  }
 }
 
 /* Extra Small Devices, Phones */

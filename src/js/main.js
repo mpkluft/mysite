@@ -7,6 +7,8 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/bootstrap/dist/js/bootstrap.min.js
 //= ../libs/fancybox/jquery.fancybox.js
+//= ../../bower_components/equalheight/dist/jquery.equalheight.js
+
 /*
  * Custom
  */

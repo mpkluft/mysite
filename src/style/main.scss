@@ -2,7 +2,6 @@
 * Third Party
 */
 @import "../../bower_components/normalize.css/normalize.css";
-@import "partials/media.css";
 @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "../libs/fancybox/jquery.fancybox.css";
 
@@ -10,9 +9,11 @@
 * Custom
 */
 @import "partials/app.scss";
+@import "partials/media.css";
 
 body {
   color: #fff;
+  min-width: 480px;
 }
 
 container {
@@ -60,7 +61,7 @@ header.top {
       height: 160px;
       position: absolute;
       top: -22px;
-      left: 10px;
+      left: -1px;
       background: url(../img/logo.png) no-repeat top center;
     }
   }
@@ -211,6 +212,7 @@ nav.main li:hover {
       span {
         color: #d12f22;
         display: inline-block;
+        margin-left: -17px;
       }
     }
   }
@@ -219,18 +221,30 @@ nav.main li:hover {
 .wrap {
     margin: 66px 0 153px;
 }
-.items_wrap{
+.items_wrap {
   padding: 0;
   list-style-type: none;
+  .active {
+    background-color: #2a2a2a;
+  }
   .item {
     float: left;
     border-right: 1px solid;
     width: 160px;
-    margin: 0 15px;
+    margin-right:30px;
     text-align: center;
     border: 1px solid #353535;
+    cursor: pointer;
   }
 }  
+.item:hover span,
+.item:hover h1{
+  background-color: #2a2a2a;
+}
+
+.item:hover .rows {
+  background: url(../img/sprite.png) 27px -156px no-repeat #353535;
+}
 
 .item span {
   width: 100%;
@@ -263,22 +277,41 @@ nav.main li:hover {
   font-size: 20px;
   margin: 0;
   color: #fff;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
-.rows {
-  width: 21px;
+
+.active .rows {
+  width: 100%;
   height: 25px;
-  background: #212121 url(../img/sprite.png) no-repeat -2px -184px;
+  background: url(../img/sprite.png) 27px -156px no-repeat #353535;
   margin: 0 auto;
+}
+
+.rows {
+  width: 100%;
+  height: 25px;
+  background: url(../img/sprite.png) 28px -184px no-repeat #212121;
+  margin: 0 auto;
+}
+
+.li_after {
+  position: absolute;
+  width: 162px;
+  height: 22px;
+  background: url(../img/triangle.png) no-repeat 8px 11px;
+  display: none;
 }
 
 .sub_menu {
   list-style-type: none;
-  position: absolute;
   padding: 20px 0;
   margin: 0;
   top: 200px;
-  background-color: #353535;
+  background-color: #323232;
+  width: 1109px;
+  display: none;
+  left: 15px;
+  position: absolute;
   li {
     display: inline-block;
     padding: 0 9px;
@@ -288,6 +321,7 @@ nav.main li:hover {
       font-size: 20px;
       h3 {
       margin: 0;
+      font-size: 23px;
      }
     }
     a:hover {
@@ -307,14 +341,17 @@ div.slogan {
   padding: 35px 0;
   font-family: "BebasRegular";
 }
+
 div.slogan strong, div.slogan .text {
   text-align: center;
   display: block;
 }
+
 span.slogan {
   font-size: 40px;
   display: inline-block;
 }
+
 span.slogan::before {
   content: " ";
   display: inline-block;
@@ -341,9 +378,16 @@ span.slogan::after {
 .news {
   padding: 30px 0 0;
   background-color: #D6D6D6;
-  img{
+  .img_news {
+    overflow: hidden;
     width: 100%;
+    height: 240px;
+    text-align: center;
     border-top: 8px solid red;
+  }
+  img{
+    display: inline-block;
+    width: 100%;
   }
   .text_news {
     font-family: "RobotoRegular";
